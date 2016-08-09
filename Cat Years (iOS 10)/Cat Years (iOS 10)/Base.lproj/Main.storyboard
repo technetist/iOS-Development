@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cat_Years__iOS_10_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your cats age in human years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwO-jN-sjK">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="b9r-Ga-0q4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WJk-JD-gx8">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4ma-ta-1f8"/>
+                                    <constraint firstAttribute="width" constant="97" id="AVj-3F-pwb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbr-DA-2cp">
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="btnConvert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6hb-Jd-iba"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ps1-4h-AVX">
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHb-Nd-yd5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="RJW-an-BWd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitten-cat-clipart.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4zL-Np-AMc">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="273" id="xmC-lW-ckw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ps1-4h-AVX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="AFW-8d-fW9"/>
+                            <constraint firstItem="4zL-Np-AMc" firstAttribute="centerX" secondItem="Tbr-DA-2cp" secondAttribute="centerX" id="BOZ-H9-F0t"/>
+                            <constraint firstItem="Tbr-DA-2cp" firstAttribute="top" secondItem="WJk-JD-gx8" secondAttribute="bottom" constant="15" id="LGi-JD-Emg"/>
+                            <constraint firstItem="WJk-JD-gx8" firstAttribute="top" secondItem="NwO-jN-sjK" secondAttribute="bottom" constant="19" id="Llm-Or-c2w"/>
+                            <constraint firstItem="ps1-4h-AVX" firstAttribute="centerX" secondItem="NwO-jN-sjK" secondAttribute="centerX" id="NmY-1d-AgK"/>
+                            <constraint firstItem="NwO-jN-sjK" firstAttribute="centerX" secondItem="WJk-JD-gx8" secondAttribute="centerX" id="VfR-dO-2US"/>
+                            <constraint firstItem="Tbr-DA-2cp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="222" id="gG7-D2-jt5"/>
+                            <constraint firstItem="NwO-jN-sjK" firstAttribute="top" secondItem="ps1-4h-AVX" secondAttribute="bottom" constant="34" id="gTU-xd-GWn"/>
+                            <constraint firstItem="aHb-Nd-yd5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lWR-91-XKu"/>
+                            <constraint firstItem="WJk-JD-gx8" firstAttribute="centerX" secondItem="Tbr-DA-2cp" secondAttribute="centerX" id="lmP-88-NI6"/>
+                            <constraint firstItem="4zL-Np-AMc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="oEO-CW-WhE"/>
+                            <constraint firstItem="ps1-4h-AVX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="uam-hs-BJv"/>
+                            <constraint firstItem="4zL-Np-AMc" firstAttribute="top" secondItem="aHb-Nd-yd5" secondAttribute="bottom" constant="9" id="xeW-Gd-oaR"/>
+                            <constraint firstItem="ps1-4h-AVX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xgA-Vt-abc"/>
+                            <constraint firstItem="aHb-Nd-yd5" firstAttribute="top" secondItem="Tbr-DA-2cp" secondAttribute="bottom" constant="8" id="xue-WR-3Bf"/>
+                            <constraint firstItem="aHb-Nd-yd5" firstAttribute="centerX" secondItem="Tbr-DA-2cp" secondAttribute="centerX" id="zly-eB-nhh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblResult" destination="aHb-Nd-yd5" id="g0b-va-hc6"/>
+                        <outlet property="txtBoxYears" destination="WJk-JD-gx8" id="Ldh-Q4-YkG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100.00000000000001" y="104.34782608695653"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kitten-cat-clipart.jpg" width="563" height="615"/>
+    </resources>
+</document>
