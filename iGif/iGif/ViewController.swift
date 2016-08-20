@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     var isAnimated = false
     
     var timer = Timer()
+    
+    //animation function, delays the image and queues the next
     func animate() {
         image.image = UIImage(named: "frame_\(counter)_delay-0.1s.gif")
         
@@ -29,6 +31,7 @@ class ViewController: UIViewController {
         }
     }
     
+    //starts the animation based on a timer
     @IBAction func btnStart(_ sender: AnyObject) {
         if isAnimated {
             timer.invalidate()
@@ -42,6 +45,30 @@ class ViewController: UIViewController {
             isAnimated = true
         }
     }
+    
+    //Tool bar buttons to change animation type
+    @IBAction func btnFadeIn(_ sender: AnyObject) {
+        image.alpha = 0
+        
+        UIView.animate(withDuration: 1, animations: {
+            self.image.alpha = 1
+            })
+    }
+    @IBAction func btnSlideIn(_ sender: AnyObject) {
+        image.center = CGPoint(x: image.center.x - 500, y: image.center.y)
+        
+        UIView.animate(withDuration: 2) {
+            self.image.center = CGPoint(x:self.image.center.x + 500, y: self.image.center.y)
+        }
+    }
+    @IBAction func btnGrow(_ sender: AnyObject) {
+        image.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+        
+        UIView.animate(withDuration: 1){
+                self.image.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
