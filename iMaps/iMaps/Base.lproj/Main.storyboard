@@ -18,15 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3yY-i8-ytA">
-                                <frame key="frameInset" width="1000" height="1000"/>
-                            </mapView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3yY-i8-ytA"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3yY-i8-ytA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3hZ-rz-dZh"/>
                             <constraint firstAttribute="trailing" secondItem="3yY-i8-ytA" secondAttribute="trailing" id="66N-xk-oDz"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3yY-i8-ytA" secondAttribute="bottom" id="mW4-IN-7Wt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3yY-i8-ytA" secondAttribute="bottom" constant="20" id="mW4-IN-7Wt"/>
                             <constraint firstItem="3yY-i8-ytA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sfr-TB-mkS"/>
                         </constraints>
                     </view>
@@ -36,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-76" y="134.48275862068968"/>
+            <point key="canvasLocation" x="-76.5" y="133.5"/>
         </scene>
     </scenes>
 </document>
